@@ -1,0 +1,14 @@
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\bin\Debug\net10.0\Guía4.exe
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\bin\Debug\net10.0\Guía4.deps.json
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\bin\Debug\net10.0\Guía4.runtimeconfig.json
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\bin\Debug\net10.0\Guía4.dll
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\bin\Debug\net10.0\Guía4.pdb
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\Guía4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\Guía4.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\Guía4.AssemblyInfo.cs
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\Guía4.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\Guía4.dll
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\refint\Guía4.dll
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\Guía4.pdb
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\Guía4.genruntimeconfig.cache
+C:\Users\PC\Desktop\2026-2\fp\Guía4\Guía4\obj\Debug\net10.0\ref\Guía4.dll
