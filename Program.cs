@@ -35,3 +35,20 @@ else
 {
     Console.WriteLine($"{nombreBuscado} no se encontró ");
 }
+//Punto 5:Estructura combinada
+string[,] usuarios =
+{
+    { "Luis", "luis@correo.com", "Cusco" },
+    { "María", "maria@correo.com", "Lima" },
+    { "Ana", "ana@correo.com", "Lima" },
+    { "Carlos", "carlos@correo.com", "Arequipa" },
+    { "Beatriz", "beatriz@correo.com", "Trujillo" }
+};
+int filas = 5;
+int columnas = 3;
+
+Console.WriteLine("Lista de usuarios:");
+for (int i = 0; i < filas; i++)
+{
+    Console.WriteLine($"{i + 1}. Nombre: {usuarios[i, 0]} | Email: {usuarios[i, 1]} | Ciudad: {usuarios[i, 2]}");
+}
