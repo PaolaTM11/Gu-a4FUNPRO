@@ -73,7 +73,7 @@ static void BuscarPorCiudad(string[,] usuarios, int filas, string ciudad)
     int coincidencias = 0;
     for (int i = 0; i < filas; i++)
     {
-        // Normalizar: ambos textos en minúsculas antes de comparar
+        // Normalizamos ambos textos en minúsculas antes de comparar
         if (usuarios[i, 2].ToLower().IndexOf(ciudad.ToLower()) != -1)
         {
             Console.WriteLine($"Nombre: {usuarios[i, 0]} | Email: {usuarios[i, 1]} | Ciudad: {usuarios[i, 2]}");
@@ -97,7 +97,7 @@ static void OrdenarPorNombre(string[,] usuarios, int filas, int columnas)
         {
             if (usuarios[i, 0].CompareTo(usuarios[i + 1, 0]) > 0)
             {
-                // Intercambiar también los datos asociados (fila completa)
+                
                 for (int c = 0; c < columnas; c++)
                 {
                     string temp = usuarios[i, c];
