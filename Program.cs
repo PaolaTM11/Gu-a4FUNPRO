@@ -48,7 +48,63 @@ int filas = 5;
 int columnas = 3;
 
 Console.WriteLine("Lista de usuarios:");
-for (int i = 0; i < filas; i++)
+MostrarUsuarios(usuarios, filas);
+
+//Punto6: Búsqueda textual por ciudad
+Console.WriteLine("Escribe la ciudad a buscar:");
+string ciudadBuscada = Console.ReadLine();
+BuscarPorCiudad(usuarios, filas, ciudadBuscada);
+
+//Punto7: Ordenar alfabéticamente los nombres
+OrdenarPorNombre(usuarios, filas, columnas);
+Console.WriteLine("Usuarios ordenados alfabéticamente:");
+MostrarUsuarios(usuarios, filas);
+
+static void MostrarUsuarios(string[,] usuarios, int filas)
 {
-    Console.WriteLine($"{i + 1}. Nombre: {usuarios[i, 0]} | Email: {usuarios[i, 1]} | Ciudad: {usuarios[i, 2]}");
+    for (int i = 0; i < filas; i++)
+    {
+        Console.WriteLine($"{i + 1}. Nombre: {usuarios[i, 0]} | Email: {usuarios[i, 1]} | Ciudad: {usuarios[i, 2]}");
+    }
+}
+
+static void BuscarPorCiudad(string[,] usuarios, int filas, string ciudad)
+{
+    int coincidencias = 0;
+    for (int i = 0; i < filas; i++)
+    {
+        // Normalizar: ambos textos en minúsculas antes de comparar
+        if (usuarios[i, 2].ToLower().IndexOf(ciudad.ToLower()) != -1)
+        {
+            Console.WriteLine($"Nombre: {usuarios[i, 0]} | Email: {usuarios[i, 1]} | Ciudad: {usuarios[i, 2]}");
+            coincidencias++;
+        }
+    }
+     if (coincidencias == 0)
+    {
+        Console.WriteLine($"No hay usuarios en {ciudad}");
+    }
+    else
+    {
+        Console.WriteLine($"Coincidencias encontradas: {coincidencias}");
+    }
+}
+static void OrdenarPorNombre(string[,] usuarios, int filas, int columnas)
+{
+    for (int pasada = 0; pasada < filas - 1; pasada++)
+    {
+        for (int i = 0; i < filas - 1 - pasada; i++)
+        {
+            if (usuarios[i, 0].CompareTo(usuarios[i + 1, 0]) > 0)
+            {
+                // Intercambiar también los datos asociados (fila completa)
+                for (int c = 0; c < columnas; c++)
+                {
+                    string temp = usuarios[i, c];
+                    usuarios[i, c] = usuarios[i + 1, c];
+                    usuarios[i + 1, c] = temp;
+                }
+            }
+        }
+    }
 }
